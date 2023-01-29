@@ -2,11 +2,25 @@
 <html lang="en">
     <head>
         <title>Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div class="flex-container-right">
+            <div class="nav-links">
+                <a href="index.html">Google Search</a>
+            </div>
+        </div>
+        <div class="flex-container-center">
+            <img src="logo.png" alt="Google">
+        </div>
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Advanced Search">
+            <div class="roundbox">
+                <input type="text" name="q" autofocus spellcheck="false" class="input">
+            </div>
+            <div class="flex-container-center">
+                <button type="submit" class=button>Google Search</button>
+            </div>
         </form>
     </body>
 </html>

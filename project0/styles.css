@@ -1,6 +1,31 @@
-.flex-container {
+.flex-container-center {
     display: flex;
     justify-content: center;
+}
+
+.flex-container-right {
+    display: flex;
+    justify-content: right;
+}
+
+.flex-container-topleft {
+    display: flex;
+    justify-content: left;
+    margin: auto;
+}
+
+.nav-links {
+    margin: auto 10px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 .center {
@@ -45,4 +70,11 @@ img {
     height: 30px;
     margin: 10px;
     width: auto;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
 }
