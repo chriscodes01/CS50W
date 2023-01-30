@@ -8,14 +8,22 @@
     justify-content: right;
 }
 
+.flex-container {
+    display: flex;
+}
+
 .flex-container-topleft {
     display: flex;
     justify-content: left;
     margin: auto;
+    max-width: 800px;
 }
 
 .nav-links {
     margin: auto 10px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: right;
 }
 
 a:link {
@@ -64,6 +72,14 @@ img {
     width: auto;
     max-width: 584px;
     border-radius: 24px;
+}
+
+.rec-search {
+    background-color: transparent;
+    border: 1px solid black;
+    display: flex;
+    margin: auto;
+    width: 50px;
 }
 
 .button {
