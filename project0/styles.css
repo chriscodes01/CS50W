@@ -10,6 +10,7 @@
 
 .flex-container {
     display: flex;
+    margin: 8px auto;
 }
 
 .flex-container-topleft {
@@ -17,6 +18,37 @@
     justify-content: left;
     margin: auto;
     max-width: 800px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: green
+    justify-content: left;
+    padding: 20px;
+    width: 70%;
+    gap: 10px;
+}
+
+.grid-container > div {
+    background-color: blue
+    font-size: 13px;
+}
+
+.entire-row {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 600px;
+}
+
+.adv-bars {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 24px;
+}
+
+.fields {
+    margin: auto 0;
 }
 
 .nav-links {
@@ -64,6 +96,13 @@ img {
     word-wrap: break-word;
 }
 
+.adv-input {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    width: 70%;
+}
+
 .roundbox {
     background-color: transparent;
     border: 1px solid black;
@@ -86,6 +125,21 @@ img {
     height: 30px;
     margin: 10px;
     width: auto;
+}
+
+.adv-button {
+    height: 30px;
+    margin: 10px;
+    margin-right: 0;
+    width: auto;
+    border-color: #2f5bb7;
+    border: thin;
+    background: #4d90fe;
+    color: white;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px;
 }
 
 input:-webkit-autofill,

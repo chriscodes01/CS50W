@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body style="font-family: arial, sans-serif;">
         <div class="flex-container">
             <div class="flex-container-topleft">
                 <img src="logo.png" alt="Google" style="margin-left: 8px; margin-top: 8px; width: 10%;">
@@ -14,12 +14,37 @@
                 <a href="index.html">Google Search</a>
             </div>
         </div>
+        <div class="flex-container" style="border-bottom: 1px solid gainsboro;">
+            <h3 style="font-weight: normal; color: #d93025;">Advanced Search</h3>
+        </div>
         <form action="https://www.google.com/search">
-            <div class="roundbox">
-                <input type="text" name="q" autofocus spellcheck="false" class="input">
-            </div>
-            <div class="flex-container-center">
-                <button type="submit" class=button>Advanced Search</button>
+            <div class="grid-container">
+                <div class="entire-row" style="font-size: 18px; padding: 20px 0;">Find pages with...</div>
+                
+                <div class="fields">
+                    all these words: 
+                </div>
+                <input type="text" name="as_q" autofocus spellcheck="false" class="adv-bars">
+                
+                <div class="fields">
+                    this exact word or phrase:
+                </div>
+                <input type="text" name="as_epq" autofocus spellcheck="false" class="adv-bars">
+                
+                <div class="fields">
+                    any of these words:
+                </div>
+                <input type="text" name="as_oq" autofocus spellcheck="false" class="adv-bars">
+                
+                <div class="fields">
+                    none of these words:
+                </div>
+                <input type="text" name="as_eq" autofocus spellcheck="false" class="adv-bars">
+
+                <div></div>
+                <div class="adv-bars" style="text-align: right;">
+                    <button type="submit" class="adv-button">Advanced Search</button>
+                </div>
             </div>
         </form>
     </body>
