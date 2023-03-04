@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    TODO: Entry Name
+{% endblock %}
+
+{% block body %}
+    <h1>Entry Page Name</h1>
+    <h2>{{ entry }}</h2>
+
+    {% if entry %}
+        <h2>{{ entry }}</h2>
+    {% else %}
+        <h2>ERROR: Entry not found.</h2>
+    {% endif %}
+
+
+{% endblock %}
