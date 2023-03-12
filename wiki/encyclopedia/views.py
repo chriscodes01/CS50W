@@ -9,8 +9,23 @@ def index(request):
         "entries": util.list_entries()
     })
 
+def mdToHtml(entry):
+    title = util.get_entry(entry)
+    markdowner = Markdown()
+    if title == None:
+        return None
+    else:
+        return markdowner.convert(title)
+
+
+
 def entry(request, entry):
-    return render(request, "encyclopedia/entry.html", {
-        "entry": util.get_entry(entry)
+    content = mdToHtml(entry)
+    if content == None:
+        return render(request, "encyclopedia/error.html")
+    else:
+        return render(request, "encyclopedia/entry.html", {
+            "entry": entry,
+            "content": content
     })
 
