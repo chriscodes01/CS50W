@@ -43,3 +43,9 @@ textarea {
     margin: 4px 2px;
     padding: 15px;
 }
+
+.createEntry {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
