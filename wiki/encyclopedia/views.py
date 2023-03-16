@@ -37,7 +37,7 @@ def search(request):
         query = request.POST["q"]
         content = mdToHtml(query)
 
-        if content == True:
+        if content is not None:
             return render(request, "encyclopedia/entry.html", {
                 "entry": query,
                 "content": content
